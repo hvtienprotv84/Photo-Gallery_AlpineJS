@@ -47,7 +47,7 @@ a:hover {
 .fixed-top .fixed-title {
   display: block;
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 .fixed-title {
@@ -107,6 +107,7 @@ a:hover {
 @media (max-width: 768px) {
   .navbar-brand {
     font-size: 15px !important;
+    margin-right: 0px;
   }
   .navbar-brand-image {
     height: 35px;
