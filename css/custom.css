@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  font-size: 66px;
+  color: #fff;
+  margin-bottom: 26px;
+}
+h2 {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0;
+  line-height: 46px;
+  margin-bottom: 54px;
+}
+p,
+a,
+span {
+  font-family: "Lora", serif;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Image Gallery ----- */
+.navigation {
+  position: absolute;
+  width: 100%;
+}
+.fixed-top {
+  position: fixed !important;
+  background-color: #7f7f7f;
+}
+.fixed-top .fixed-title {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.fixed-title {
+  display: none;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+.navbar-mobile {
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+.navbar-mobile .nav-link {
+  font-family: "Nunito", sans-serif;
+}
+.nav-color {
+  color: #0078d7 !important;
+}
+.sign-in-link {
+  color: #fff !important;
+  font-size: 18px;
+}
+.hero {
+  background-color: #0078d7;
+  background-image: url("https://cdn.worldvectorlogo.com/logos/alpinejs-2.svg");
+  /* background-position: center center; */
+  /* background-size: 100%; */
+  background-size: contain;
+  padding: 100px 0 150px;
+}
+.form-control {
+  border-radius: 0px !important;
+  outline: none;
+}
+.btn {
+  border-radius: 0px;
+}
+.body-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.copyright{
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 15px !important;
+  }
+  .navbar-brand-image {
+    height: 35px;
+  }
+  .navbar-toggler {
+    background-color: #fff !important;
+  }
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 10px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+/* ----- Image Gallery */
